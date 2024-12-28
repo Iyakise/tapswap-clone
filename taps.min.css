@@ -1,0 +1,354 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s linear;
+}
+
+/*tapswap*/
+.__tapswap__{
+	user-select: none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	background:#ababab;
+	height:100vh;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;;
+}
+/*
+	HEXADECIMAL COLOR CODE 
+	#fff
+	abcdef1234567890
+*/
+
+
+.__tapSwapMain__{
+	width:450px;
+	height:100%;
+	margin:auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgb(23, 6, 40);
+}
+
+.__tapSwapMain__
+.tap_contents{
+	height:90%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: .3rem .6rem;
+}
+
+.__tab__ .tab-btn img{
+	width:100%;
+	height: 100%;
+}
+.__tab__ .tab-btn {
+	width: 100%;
+	height: 100%;
+	border: none;
+	position: relative;
+	background: transparent;
+}
+.__tab__{
+	height: 350px;
+	width: 100%;
+	position: relative;
+}
+
+.tapCoinPrice,
+.tab_bttm{
+	height: 150px;
+	width: 100%;
+	background: #180b2d;
+	/* border: 2px solid white; */
+}
+
+.tapName{
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	color: orange;
+	margin: 0;
+}
+.tapCoinPrice{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  position: relative;
+}
+.tab_bttm{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.__btm_tools__{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	gap:10px;
+	justify-content: space-evenly;
+}
+
+.__btm_tools__ .tools{
+	width: calc(70% / 5);
+	height: 70px;
+	color: orange;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	font-family: monospace;
+	border-radius: 8px;
+	border:1px solid orange;
+}
+
+.__btm_tools__ .tools:active{
+	background: gray;
+}
+
+.tops1{
+	height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:8px;
+}
+
+.tops1 span{
+	color:#fff;
+	font-weight: 800;
+	font-family: monospace;
+	font-size: 1.6rem;
+}
+.tops1 span.remaining{
+	color: yellow;
+}
+
+.smcoin{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.tapCoinPrice .d{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:10px;
+}
+
+.tapCoinPrice .d .tapBalance{
+	font-size: 4em;
+	color: #fff;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.league{
+	color: gray;
+	font-family: sans-serif;
+	font-weight: 400;
+}
+
+.progress{
+	width:95%;
+	border-radius: 10px;
+	height: 20px;
+	border: 1px solid orange;
+	padding: 2px;
+}
+
+.progress
+.progvalue{
+	background: gold;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.tapPopout{
+	position: absolute;
+	z-index: 2;
+	font-size: 2em;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: gold;
+	font-weight: 600;
+	animation: slidup 2s linear;
+}
+
+@keyframes slidup {
+		100%{
+			top: -80px;
+			opacity: 0;
+		}
+}
+
+.coverWrapper{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background: #180b2d;
+}
+
+.booster{
+	width: 100%;
+	height: 100%;
+	/* border:2px solid red; */
+}
+
+.booster h4{
+	color: #fff;
+	font-weight: 400;
+	font-family: sans-serif;
+	text-transform: capitalize;
+	font-size: 1.3rem;
+}
+
+.booster .first2In1{
+	height: 30%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.bt-1{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 40%;
+	border: 1px solid gold;
+	height: 70%;
+	border-radius: 20px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.bt-1 .fire{
+	color: gold;
+}
+
+.bt-1
+.threeOva3
+{
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.threeOva3
+.tapGuru{
+	font-size: .9rem;
+	color: gold;
+	font-family: sans-serif;
+	text-transform: capitalize;
+}
+.three3Ova{
+	color: #fff;
+	font-family: monospace;
+	font-size: .8rem;
+}
+.btStatus{
+	width: 100px;
+	height: 100px;
+	color:white;
+	border-radius: 200px;
+	position: relative;
+	z-index: 50;
+	left: 0;
+	top: 70%;
+}
+
+.btStatus .battery{
+	position: absolute;
+	/* top: 70px; */
+	background: red;
+}
+
+.longBooster{
+	width: 90%;
+	height: 60px;
+	display: flex;
+	margin: 5px auto;
+	align-items: center;
+	justify-content: space-around;
+	border: 0.3px solid #fff;
+	background: rgb(23, 6, 40);
+	border-radius: 10px;
+}
+
+.middle60{
+	width: 60%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap:5px;
+	display: flex;
+}
+
+.divTwo-in-two{
+	width: 70%;
+	height: 30px;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+	/* border: 1px solid blue; */
+	color: orange;
+	font-family: monospace;
+}
+
+.middleSpan{
+	/* text-align: left; */
+	width: 60%
+}
+
+.divTwo-in-two span{
+	color: gold;
+}
+
+.middle60 .middleSpan{
+	color: #ababab;
+	font-family: sans-serif;
+	text-transform: capitalize;
+}
+
+.kdk-icon,.lastAngle {
+	color: gold;
+}
+
+.notificationWrap{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: rgb(23, 6, 40);;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gold;
+  flex-wrap: wrap;
+}
+
+.notificationWrap .noti-txt{
+  font-size: 13px;
+  font-family: monospace;
+}
